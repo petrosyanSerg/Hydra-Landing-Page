@@ -3,16 +3,18 @@ $bg-main-color: #302c42;
 $bg-media: #C0B7E8;
 $text-color: #ffffff;
 $icon-color: rgba(192, 183, 232);
+$line-color: rgba(192, 183, 232, 0.33);
 
 //Gradients
+$card-gradient: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
 $bg-circle-gradient: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
 $btn-gradient: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
 $info-gradient: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
 $text-gradient: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
-
 //Borders-Radius
 $border-rad: 40px;
 $border-rad-section: 90px;
+$border-rad-sectionFive: 160px;
 
 //Font-weight
 $fw-exLight: 200;

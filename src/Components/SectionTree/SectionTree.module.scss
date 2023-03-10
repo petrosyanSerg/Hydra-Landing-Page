@@ -30,6 +30,10 @@
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-evenly;
+
+		button {
+			align-self: flex-start;
+		}
 	}
 
 	&_Title {
@@ -39,16 +43,5 @@
 	&_SubTitle {
 		font-size: $fs-xxxl;
 		font-weight: $fw-Light;
-	}
-
-	&_Button {
-		align-self: flex-start;
-		cursor: pointer;
-		color: $bg-main-color;
-		font-weight: $fw-Bold;
-		border-radius: $border-rad;
-		background: $btn-gradient;
-		border: none;
-		padding: 1rem 2rem;
 	}
 }

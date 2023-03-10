@@ -1,5 +1,6 @@
 import React from 'react'
 import { HiArrowRight } from "react-icons/hi";
+import Button from '../Button/Button';
 
 import classes from "./SectionOne.module.scss"
 export default function SectionOne() {
@@ -16,7 +17,7 @@ export default function SectionOne() {
 					nisl tincidunt eget. Lectus mauris eros in vitae .
 				</p>
 				<div className={classes.SectionOne_Buttons}>
-					<button className={classes.SectionOne_Button}>BUILD YOUR WORLD</button>
+					<Button text="BUILD YOUR WORLD" />
 					<HiArrowRight className={classes.SectionOne_Icon} />
 				</div>
 			</div>

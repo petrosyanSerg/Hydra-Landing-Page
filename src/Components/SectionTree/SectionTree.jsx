@@ -2,6 +2,7 @@ import React from 'react'
 import Indication from '../Indication/Indication';
 import { info } from '../../Helper/info';
 import classes from "./SectionTree.module.scss"
+import Button from '../Button/Button';
 
 export default function SectionTree() {
 	return (
@@ -27,7 +28,7 @@ export default function SectionTree() {
 						retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
 						n tempor.
 					</p>
-					<button className={classes.SectionTree_Button}>LET’S GET IN TOUCH</button>
+					<Button text="LET’S GET IN TOUCH" />
 				</aside>
 			</div>
 			<Indication {...info[1]} />

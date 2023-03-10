@@ -1,0 +1,46 @@
+@import "../../../Sass/Variables";
+
+.Card {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.5rem 1.5rem;
+	background-image: $card-gradient;
+	border-radius: $border-rad;
+
+	&_Images {
+		overflow: hidden;
+		width: 200px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		border: 10px solid rgba(14, 14, 14, 0.3);
+	}
+
+	&_Img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&_Title {
+		font-size: $fs-xxl;
+		font-weight: $fw-exBold;
+		position: relative;
+		padding-block: 1rem;
+
+		&::after {
+			position: absolute;
+			bottom: 0;
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $line-color;
+		}
+	}
+
+	&_Text {
+		font-size: $fs-xs;
+	}
+}

@@ -1,0 +1,48 @@
+@import "../../Sass/mixins";
+@import "../../Sass/Variables";
+
+.SectionFive {
+	background-image: url("../../Assets/ContentImage/Girlimage.png");
+	@include bgImageSizes;
+	width: 100%;
+	height: 30vh;
+	margin-block: 5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: $border-rad-sectionFive;
+	box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+	position: relative;
+
+	&_Title {
+		font-size: $fs-xxxl;
+		font-weight: $fw-exBold;
+	}
+
+	&_SubTitle {
+		font-size: $fs-xxxl;
+	}
+
+	&_Chevron {
+		overflow: hidden;
+		width: 70px;
+		aspect-ratio: 1/1;
+		position: absolute;
+		bottom: -15%;
+		border: 10px solid rgba(14, 14, 14, 0.32);
+		border-radius: 50%;
+	}
+
+	&_IconWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background-image: $bg-circle-gradient;
+		font-size: $fs-lg;
+		color: $bg-main-color;
+	}
+
+}

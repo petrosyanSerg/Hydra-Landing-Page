@@ -40,16 +40,6 @@
 		gap: 40px;
 	}
 
-	&_Button {
-		cursor: pointer;
-		color: $bg-main-color;
-		font-weight: $fw-Bold;
-		border-radius: $border-rad;
-		background: $btn-gradient;
-		border: none;
-		padding: 1rem 2rem;
-	}
-
 	&_Icon {
 		font-size: 40px;
 		color: $icon-color;
@@ -57,7 +47,7 @@
 
 	&_Image {
 		width: 35%;
-		min-width: 300px;
+		min-width: 500px;
 	}
 
 	&_Wrapper {
