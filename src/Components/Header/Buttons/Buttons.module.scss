@@ -1,0 +1,30 @@
+@import "./../../../Sass/Variables";
+
+.ButtonsCont {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	font-family: 'Montserrat', sans-serif;
+
+	&_Contact {
+		cursor: pointer;
+		color: $text-color;
+		font-weight: $fw-Bold;
+		border-radius: $border-rad;
+		background-color: transparent;
+		border: 2px solid $text-color;
+		padding: 1rem 2rem;
+	}
+
+	&_Join {
+		cursor: pointer;
+		color: $bg-main-color;
+		font-weight: $fw-Bold;
+		border-radius: $border-rad;
+		background: $btn-gradient;
+		border: none;
+		padding: 1rem 2rem;
+	}
+}

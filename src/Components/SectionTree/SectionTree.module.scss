@@ -1,0 +1,54 @@
+@import "./../../Sass/Variables";
+
+.SectionTree {
+	padding-block: 6rem;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 6rem;
+
+	&_Content {
+		display: flex;
+		gap: 6rem;
+	}
+
+	&_Wrapper {
+		width: 50%;
+		height: 500px;
+		min-width: 500px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 240px 100px;
+		overflow: hidden;
+
+		&_Image {
+			width: 100%;
+			height: 100%;
+			background-image: url("../../Assets/ContentImage/MenImage.png");
+		}
+	}
+
+	&_Aside {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+	}
+
+	&_Title {
+		font-size: $fs-xxxl;
+	}
+
+	&_SubTitle {
+		font-size: $fs-xxxl;
+		font-weight: $fw-Light;
+	}
+
+	&_Button {
+		align-self: flex-start;
+		cursor: pointer;
+		color: $bg-main-color;
+		font-weight: $fw-Bold;
+		border-radius: $border-rad;
+		background: $btn-gradient;
+		border: none;
+		padding: 1rem 2rem;
+	}
+}

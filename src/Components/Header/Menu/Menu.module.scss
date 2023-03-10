@@ -1,0 +1,23 @@
+@import "./../../../Sass/Variables";
+
+.Navbar {
+	min-width: 345px;
+
+	&_Menu {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	&_MenuLink {
+		cursor: pointer;
+	}
+
+	&_MenuLink {
+		font-size: $fs-xs;
+		color: $text-color;
+		font-weight: $fw-Bold;
+	}
+}

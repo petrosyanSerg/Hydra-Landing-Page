@@ -1,0 +1,39 @@
+@import "./../../../Sass/mixins";
+
+.LogoContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	gap: 10px;
+
+	&_Vector {
+		width: 10%;
+		max-width: 100px;
+		min-width: 100px;
+		aspect-ratio: 1/1;
+		background-image: url("./../../../Assets/Logo/Logo.png");
+		@include bgImageSizes
+	}
+
+	&_Text {
+		width: 90px;
+		height: 45px;
+		background-image: url("./../../../Assets/Logo/LogoText.png");
+		background-size: contain !important;
+		@include bgImageSizes
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.LogoContainer {
+		&_Vector {
+			min-width: 50px;
+		}
+
+		&_Text {
+			width: 90px;
+			max-width: 48px;
+			height: 28px;
+		}
+	}
+}

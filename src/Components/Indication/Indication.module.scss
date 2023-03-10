@@ -1,0 +1,38 @@
+@import "./../../Sass/Variables";
+
+.Indication {
+	width: 100%;
+	display: flex;
+
+	&_Block {
+		width: 50%;
+		display: flex;
+		flex-flow: column;
+	}
+
+	&_Title {
+		font-weight: $fw-Bold;
+		font-size: $fs-xxxl;
+	}
+
+	&_Cont {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&_subTitle {
+		font-size: $fs-xxxl;
+	}
+
+	&_Icon {
+		font-size: 100px;
+	}
+
+	&_Text {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
