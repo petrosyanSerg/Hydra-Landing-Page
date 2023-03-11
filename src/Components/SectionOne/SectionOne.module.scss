@@ -47,7 +47,7 @@
 
 	&_Image {
 		width: 35%;
-		min-width: 500px;
+		min-width: 450px;
 	}
 
 	&_Wrapper {
@@ -64,5 +64,89 @@
 		height: 100%;
 		background-image: url("../../Assets/ContentImage/HeaderImage.png");
 		@include bgImageSizes;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.SectionOne {
+		flex-flow: column nowrap;
+		align-items: center;
+		margin-block: 40px;
+		gap: 20px;
+
+		&_Title {
+			text-align: center;
+			font-size: 2rem;
+		}
+
+		&_Text {
+			display: none;
+		}
+
+		&_Content {
+			order: 2;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&_Image {
+			order: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&_Wrapper {
+			min-width: 350px;
+			height: 300px;
+			border-radius: 100px 100px 100px 240px;
+		}
+
+		&_Icon {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.SectionOne {
+		margin-block: 30px;
+		gap: 20px;
+
+		&_Title {
+			font-size: $fs-xxl;
+		}
+
+		&_Text {
+			font-size: $fs-sm;
+		}
+
+		&_Content {
+			order: 2;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&_Image {
+			order: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&_Wrapper {
+			min-width: 350px;
+			height: 300px;
+			border-radius: 100px 100px 100px 240px;
+		}
+
+		&_Icon {
+			display: none;
+		}
 	}
 }

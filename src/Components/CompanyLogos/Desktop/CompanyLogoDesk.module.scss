@@ -1,17 +1,10 @@
 .Logos {
 	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
-	&_Block {
-		width: 180px;
-		aspect-ratio: 1/1;
-	}
 
 	&_Img {
-		width: 100%;
-		height: 100%;
+		aspect-ratio: 1/1;
+		margin: 0px auto;
+		width: 180px;
 		object-fit: cover;
 	}
 }

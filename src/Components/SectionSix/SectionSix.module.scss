@@ -1,0 +1,11 @@
+.SectionSix {
+	padding-block: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+
+	&_Slider {
+		width: 100%;
+		text-align: center;
+	}
+}

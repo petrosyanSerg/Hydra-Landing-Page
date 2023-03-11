@@ -27,6 +27,7 @@
 
 	&_Icon {
 		font-size: 100px;
+		color: $icon-color;
 	}
 
 	&_Text {
@@ -34,5 +35,59 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.Indication {
+		justify-content: center;
+
+
+		&_Title {
+			font-size: $fs-xl;
+		}
+
+		&_subTitle {
+			font-size: $fs-xl;
+
+		}
+
+		&_Icon {
+			font-size: 50px;
+		}
+
+		&_Text {
+			font-size: $fs-xs;
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.Indication {
+		justify-content: center;
+
+		&_Block {
+			text-align: center;
+		}
+
+		&_Title {
+			font-size: $fs-lg;
+		}
+
+		&_subTitle {
+			font-size: $fs-lg;
+		}
+
+		&_Icon {
+			display: none;
+		}
+
+		&_Text {
+			display: none;
+		}
+
+		&_Cont {
+			justify-content: center;
+		}
 	}
 }

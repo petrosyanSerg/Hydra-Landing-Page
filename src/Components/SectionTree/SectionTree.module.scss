@@ -45,3 +45,50 @@
 		font-weight: $fw-Light;
 	}
 }
+
+@media only screen and (max-width: 950px) {
+	.SectionTree {
+		gap: 3rem;
+
+		&_Content {
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+			gap: 3rem;
+		}
+
+		&_Wrapper {
+			display: flex;
+			min-width: 350px;
+			height: 450px;
+			border-radius: 140px 60px;
+		}
+
+		&_Aside {
+			text-align: center;
+			align-items: center;
+			gap: 2rem;
+
+			button {
+				align-self: center;
+			}
+		}
+
+		&_Text {
+			text-align: justify;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
+	.SectionTree {
+		&_Title {
+			display: none;
+		}
+
+		&_SubTitle {
+			display: none;
+		}
+	}
+}

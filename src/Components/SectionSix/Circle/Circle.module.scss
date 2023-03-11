@@ -1,0 +1,55 @@
+@import "../../../Sass/Variables";
+
+.Circle {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	&_Wrapper {
+		width: 160px;
+		aspect-ratio: 1/1;
+		border: 10px solid rgba(0, 0, 0, 0.13);
+		border-radius: 50%;
+		display: flex;
+		overflow: hidden;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&_Number {
+		width: 100%;
+		height: 100%;
+		background-image: $bg-circle-gradient;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5rem;
+		font-weight: $fw-exBold;
+		color: $bg-main-color;
+	}
+
+	&_Block {
+		display: flex;
+		gap: 10px;
+	}
+
+	&_Icon {
+		font-size: $fs-xxl;
+		color: $icon-color;
+	}
+
+	&_Text {
+		font-size: $fs-xxl;
+		font-weight: $fw-exBold;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.Circle {
+		&_Icon {
+			display: none;
+		}
+	}
+}

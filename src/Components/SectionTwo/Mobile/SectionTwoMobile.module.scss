@@ -1,0 +1,54 @@
+@import "../../../Sass/Variables";
+
+.SectionTwo {
+	width: 100%;
+	min-width: 350px;
+	padding: 3rem;
+	display: none;
+	background-image: $info-gradient;
+	border-radius: $border-rad-section;
+
+	&_Block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&_Icon {
+		min-width: 25px;
+		font-size: 40px;
+		color: $icon-color;
+	}
+
+	&_Text {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	&_Title {
+		display: none;
+	}
+
+	&_Subtitles {
+		color: $text-color;
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	.SectionTwo {
+		display: inline-block;
+
+		&_Title {
+			display: block;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.SectionTwo {
+		&_Title {
+			display: none;
+		}
+	}
+}

@@ -46,3 +46,37 @@
 	}
 
 }
+
+@media only screen and (max-width: 768px) {
+	.SectionFive {
+		margin-block: 3rem;
+
+		&_Title {
+			font-size: $fs-xxl;
+		}
+
+		&_SubTitle {
+			font-size: $fs-xxl;
+		}
+
+		&_Chevron {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.SectionFive {
+		border-radius: 60px;
+
+		margin-block: 2rem;
+
+		&_Title {
+			font-size: $fs-md;
+		}
+
+		&_SubTitle {
+			font-size: $fs-md;
+		}
+	}
+}

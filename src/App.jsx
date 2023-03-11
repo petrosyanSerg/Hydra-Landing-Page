@@ -4,8 +4,12 @@ import Header from './Components/Header/Header';
 import SectionFive from './Components/SectionFive/SectionFive';
 import SectionFour from './Components/SectionFour/SectionFour';
 import SectionOne from './Components/SectionOne/SectionOne';
+import SectionSeven from './Components/SectionSeven/SectionSeven';
+import SectionSix from './Components/SectionSix/SectionSix';
 import SectionTree from './Components/SectionTree/SectionTree';
 import SectionTwo from './Components/SectionTwo/SectionTwo';
+
+
 
 function App() {
 	return (
@@ -17,6 +21,8 @@ function App() {
 			<SectionFour />
 			<SectionFive />
 			<CompanyLogo />
+			<SectionSix />
+			<SectionSeven />
 		</>
 	)
 }
