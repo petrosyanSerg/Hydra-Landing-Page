@@ -2,7 +2,7 @@
 
 .SectionTwo {
 	width: 100%;
-	min-width: 350px;
+	min-width: 300px;
 	padding: 3rem;
 	display: none;
 	background-image: $info-gradient;
@@ -47,6 +47,8 @@
 
 @media only screen and (max-width: 600px) {
 	.SectionTwo {
+		padding: 1.5rem;
+
 		&_Title {
 			display: none;
 		}

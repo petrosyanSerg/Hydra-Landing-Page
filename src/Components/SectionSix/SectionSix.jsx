@@ -13,7 +13,7 @@ import classes from "./SectionSix.module.scss"
 
 export default function SectionSix() {
 	return (
-		<section className={classes.SectionSix}>
+		<section className={classes.SectionSix} id="how">
 			<Indication {...info[2]} />
 			<div className={classes.SectionSix_Slider}>
 				<Slider {...responsiveSliderSettings}>

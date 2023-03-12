@@ -10,7 +10,7 @@ import classes from "./SectionFourDesk.module.scss"
 
 export default function SectionFourDesk() {
 	return (
-		<section className={classes.SectionFour}>
+		<section className={classes.SectionFour} id="services">
 			<Slider {...responsiveSliderSettings}>
 				{
 					CardData.map((card => (

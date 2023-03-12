@@ -4,7 +4,7 @@ import classes from "./SectionFive.module.scss"
 
 export default function SectionFive() {
 	return (
-		<section className={classes.SectionFive}>
+		<section className={classes.SectionFive} id="technologies">
 			<p className={classes.SectionFive_Title}>TECHNOLOGIES & HARDWARE</p>
 			<p className={classes.SectionFive_SubTitle}>USED BY HYDRA VR.</p>
 			<span className={classes.SectionFive_Chevron}>

@@ -1,9 +1,10 @@
+
 export const simpleSliderSettings = {
 	dots: false,
 	infinite: true,
 	speed: 500,
 	slidesToShow: 1,
-	slidesToScroll: 1
+	slidesToScroll: 1,
 }
 
 export const responsiveSliderSettings = {
@@ -13,6 +14,7 @@ export const responsiveSliderSettings = {
 	slidesToShow: 4,
 	slidesToScroll: 4,
 	initialSlide: 0,
+
 	responsive: [
 		{
 			breakpoint: 1024,

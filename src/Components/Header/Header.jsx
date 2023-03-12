@@ -2,7 +2,7 @@ import React from 'react'
 
 import Buttons from './Buttons/Buttons'
 import Logo from './Logo/Logo'
-import Menu from './Menu/Menu'
+import MenuBar from './Menu/Menu'
 
 import classes from "./Header.module.scss"
 
@@ -10,7 +10,7 @@ export default function Header() {
 	return (
 		<header className={classes.Header}>
 			<Logo />
-			<Menu />
+			<MenuBar />
 			<Buttons />
 		</header>
 	)
