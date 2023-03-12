@@ -3,3 +3,28 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+@mixin inputsProperty {
+	padding: 1rem 2rem;
+	border: 2px solid $text-color;
+	border-radius: $border-rad;
+	background-color: transparent;
+	color: $text-color;
+	font-size: $fs-sm;
+	min-width: 200px;
+
+
+	&::placeholder {
+		color: $text-color;
+		opacity: 0.5;
+	}
+}
+
+@mixin linesLR {
+	position: absolute;
+	content: "";
+	display: block;
+	height: 23vh;
+	width: 5px;
+	background-image: linear-gradient(179.87deg, #343045 0.47%, #343045 0.47%, #C0B7E8 35.21%, #8176AF 68.91%, #343045 99.5%);
+}

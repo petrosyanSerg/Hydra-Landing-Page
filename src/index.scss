@@ -19,6 +19,12 @@ ul {
 	list-style: none;
 }
 
+input,
+textarea {
+	outline: none;
+	border: none;
+}
+
 
 #root {
 	padding: 2rem;

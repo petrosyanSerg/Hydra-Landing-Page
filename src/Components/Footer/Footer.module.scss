@@ -1,0 +1,145 @@
+@import "../../Sass/Variables";
+@import "../../Sass/mixins";
+
+.Footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 3rem;
+
+	&_Img {
+		width: 180px;
+		aspect-ratio: 1/1;
+	}
+
+	&_Navbar {
+		position: relative;
+
+		&::after {
+			@include linesLR;
+			top: 0;
+			left: 0;
+		}
+
+		&::before {
+			@include linesLR;
+			top: 0;
+			right: -4rem;
+		}
+	}
+
+	&_Conditions {
+		position: relative;
+
+		&::before {
+			@include linesLR;
+			top: -20px;
+			right: 0;
+		}
+	}
+
+	&_Menu {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		gap: 1rem;
+		padding-inline: 3rem;
+	}
+
+	&_MenuLink {
+		cursor: pointer;
+	}
+
+	&_Medias {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 2rem;
+	}
+
+	&_Title {
+		font-weight: $fw-exBold;
+	}
+
+	&_IconCont {
+		display: flex;
+		flex-direction: row nowrap;
+		gap: 10px;
+	}
+
+	&_IconBlock {
+		overflow: hidden;
+		width: 2rem;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		background-color: $icon-color;
+	}
+
+	&_IconLink {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $bg-main-color;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.Footer {
+		&_Navbar {
+			&::before {
+				right: -1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.Footer {
+		&_Menu {
+			padding-inline: 2rem;
+		}
+
+		&_Conditions {
+			display: none;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 750px) {
+	.Footer {
+		&_Navbar {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.Footer {
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+	}
+}
+
+.Created {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding-top: 2rem;
+	font-size: $fs-sm;
+	font-weight: $fw-exBold;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		top: 0;
+		background-image: linear-gradient(270deg, #343045 0%, #C0B7E8 34.9%, #8176AF 68.75%, #343045 100%);
+	}
+}

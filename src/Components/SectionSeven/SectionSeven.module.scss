@@ -1,0 +1,95 @@
+@import "../../Sass/Variables";
+@import "../../Sass/mixins";
+
+.SectionSeven {
+	width: 100%;
+	padding: 5rem 3rem;
+	background-image: $card-gradient;
+	border-radius: $border-rad-Form;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+	&_Title {
+		font-size: $fs-xxxl;
+		padding: 1.5rem;
+		position: relative;
+		text-align: center;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-image: linear-gradient(270deg, #343045 0%, #C0B7E8 34.9%, #8176AF 68.75%, #343045 100%);
+		}
+	}
+
+	&_SubTitle {
+		text-align: center;
+		font-size: $fs-xxxl;
+		margin: 1.5rem;
+	}
+
+	&_FormContainer {
+		width: 90%;
+	}
+
+	&_Form {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&_InputsBlock {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 10px;
+		position: relative;
+	}
+
+	&_Input {
+		width: 50%;
+		@include inputsProperty
+	}
+
+	&_Subject {
+		width: 100%;
+		@include inputsProperty;
+	}
+
+	&_Area {
+		width: 100%;
+		height: 30vh;
+		resize: none;
+		@include inputsProperty;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.SectionSeven {
+		padding: 2rem 0.75rem;
+		border-radius: $border-rad;
+
+		&_InputsBlock {
+			width: 100%;
+			gap: 2rem;
+			display: flex;
+			flex-flow: column nowrap;
+		}
+
+		&_Input {
+			width: 100%;
+		}
+
+		&_Area {
+			height: 25vh;
+		}
+	}
+}
