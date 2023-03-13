@@ -30,6 +30,7 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
+
 }
 
 a {
@@ -48,6 +49,8 @@ textarea {
 
 
 #root {
+	max-width: 2000px;
+	margin: 0px auto;
 	padding: 2rem;
 	background-color: $bg-main-color;
 	color: $text-color;
