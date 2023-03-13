@@ -51,10 +51,21 @@ textarea {
 	padding: 2rem;
 	background-color: $bg-main-color;
 	color: $text-color;
+	background-image: url("./Assets/BackGroundLines/Hydra-Desktop.png");
+	background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 900px) {
 	#root {
+		background-image: none;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#root {
+		overflow: hidden;
+		background-image: url("./Assets/BackGroundLines/Hydra-Mobile.png");
+		background-position: 0px -80px;
 		padding: 1rem;
 	}
 }

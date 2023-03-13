@@ -64,11 +64,12 @@
 			display: block;
 			z-index: 99;
 			font-size: $fs-xxxl;
+			cursor: pointer;
 		}
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 
 	.Navbar {
 		&_Icon {
