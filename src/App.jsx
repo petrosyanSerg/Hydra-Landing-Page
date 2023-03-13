@@ -1,4 +1,3 @@
-import './App.scss';
 import CompanyLogo from './Components/CompanyLogos/CompanyLogo';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';

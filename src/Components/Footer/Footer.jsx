@@ -16,16 +16,16 @@ export default function Footer() {
 				<div className={classes.Footer_Navbar}>
 					<ul className={classes.Footer_Menu}>
 						<li className={classes.Footer_MenuItem}>
-							<a className={classes.Footer_MenuLink}> ABOUT </a>
+							<a href="#about" className={classes.Footer_MenuLink}> ABOUT </a>
 						</li>
 						<li className={classes.Footer_MenuItem}>
-							<a className={classes.Footer_MenuLink}> SERVICES </a>
+							<a href="#services" className={classes.Footer_MenuLink}> SERVICES </a>
 						</li>
 						<li className={classes.Footer_MenuItem}>
-							<a className={classes.Footer_MenuLink}> TECHNOLOGIES </a>
+							<a href="#technologies" className={classes.Footer_MenuLink}> TECHNOLOGIES </a>
 						</li>
 						<li className={classes.Footer_MenuItem}>
-							<a className={classes.Footer_MenuLink}> HOW TO </a>
+							<a href="#how" className={classes.Footer_MenuLink}> HOW TO </a>
 						</li>
 						<li className={classes.Footer_MenuItem}>
 							<a className={classes.Footer_MenuLink}> JOIN HYDRA </a>
