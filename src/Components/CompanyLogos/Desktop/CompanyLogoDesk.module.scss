@@ -1,10 +1,40 @@
 .Logos {
 	width: 100%;
+	position: relative;
 
 	&_Img {
 		aspect-ratio: 1/1;
 		margin: 0px auto;
 		width: 180px;
 		object-fit: cover;
+	}
+
+	&_Arrows {
+		display: none;
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+	}
+
+	&_Next {
+		position: absolute;
+		z-index: 1;
+		top: 35%;
+		left: -20px;
+	}
+
+	&_Prev {
+		position: absolute;
+		z-index: 1;
+		top: 35%;
+		right: -20px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.Logos {
+		&_Arrows {
+			display: flex;
+		}
 	}
 }

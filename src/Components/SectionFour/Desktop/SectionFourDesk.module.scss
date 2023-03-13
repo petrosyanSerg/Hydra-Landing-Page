@@ -1,3 +1,33 @@
 .SectionFour {
 	width: 100%;
+	position: relative;
+
+	&_Arrows {
+		display: none;
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+	}
+
+	&_Next {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: -20px;
+	}
+
+	&_Prev {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		right: -20px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.SectionFour {
+		&_Arrows {
+			display: flex;
+		}
+	}
 }
